@@ -1,0 +1,73 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: monospace;
+	font-size: 13px;
+	min-height: 0;
+}
+
+
+window#waybar {
+	background: #555555;
+	color: white;
+	border-radius: 5px;
+}
+
+
+
+
+
+#workspaces,
+#window,
+#tray,
+#controlCenter,
+#clock {
+	padding: 0 12px;
+	margin: 3px;
+	background-color: #222222;
+	border-radius: 5px;
+}
+
+#workspaces button {
+	color: white;
+	padding: 0 2px;
+	margin: 0;
+}
+
+#workspaces button.focused {
+	color: orange;
+}
+
+
+
+
+#output {
+	background-color:red;
+}
+#input {
+	background-color:blue;
+}
+
+#output.text {
+	min-width: 20px;
+}
+#input.text {
+	min-width: 20px;
+}
+
+#pulseaudio.output {
+}
+#pulseaudio.input {
+}
+
+
+
+
+
+#network {
+}
+
+
+#controlCenter > *:not(:first-child):not(:last-child) box {
+}
+
