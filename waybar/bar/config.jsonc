@@ -1,0 +1,141 @@
+// -*- mode: jsonc -*-
+{
+        "layer": "top",
+        "height": 25,
+        "width": 1000,
+        "spacing": 0,
+        "reload_style_on_change": true,
+
+        "modules-left": [
+                "hyprland/workspaces",
+                "custom/arrow",
+                "hyprland/window"
+        ],
+        "modules-center": [ ],
+        "modules-right": [
+                "tray",
+                "gamemode",
+                "group/control-center",
+                "clock",
+                "custom/power"
+        ],
+
+        "group/control-center": {
+                "orientation": "horizontal",
+                "modules": [
+                        "custom/notifications",
+                        "custom/cliphist",
+                        "backlight",
+                        "network",
+                        "pulseaudio#output",
+                        "pulseaudio#input",
+                        "battery"
+                ]
+        },
+
+        "hyprland/workspaces": {
+                "format": "{icon}",
+                "on-click": "activate",
+                "format-icons": {
+                        "active": "",
+                        "default": "",
+                        "empty": ""
+                },
+                "persistent-workspaces": {
+                        "*": [ 1, 2, 3, 4 ]
+                }
+        },
+        "custom/arrow": {
+                "format": ""
+        },
+        "hyprland/window": { },
+
+        "tray": {
+                "spacing": 6,
+                "icon-size": 13
+        },
+        "gamemode": {
+                "use-icon": true,
+                "icon-name": "input-gaming-symbolic",
+                "icon-size": 13,
+                "tooltip": true,
+                "tooltip-format": "Games running: {count}"
+        },
+        "custom/cliphist": {
+                "format": "󰅍",
+                "tooltip-format": "Clipboard History",
+                "on-click": "cliphist list | fuzzel --dmenu --mesg \"Clipboard History\" | cliphist decode | wl-copy"
+        },
+        "custom/notifications": {
+                "exec": "~/.config/waybar/scripts/dunst.sh",
+                "return-type": "json",
+                "tooltip-format": "Notifications",
+                "on-click": "~/.config/waybar/scripts/dunst-history.sh",
+                "on-click-right": "dunstctl set-paused toggle",
+                "restart-interval": 1
+        },
+        "backlight": {
+                "format": "{icon}",
+                "format-icons": [ "󰃞", "󰃟", "󰃠" ],
+                "tooltip-format": "Brightness: {percent}%"
+        },
+        "network": {
+                "format-wifi": "{icon}",
+                "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+                "tooltip-format-wifi": "{ifname}: {essid} ({signalStrength}%)",
+                "format-ethernet": "󰈀",
+                "tooltip-format-ethernet": "{ifname}: {essid}",
+                "format-disconnected": "{icon}",
+                "tooltip-format-disconnected": "Disconnected",
+                "format-disabled": "{icon}",
+                "tooltip-format-disabled": "Disabled",
+                "on-click": "foot nmtui"
+        },
+        "pulseaudio#output": {
+                "format": "{icon}",
+                "format-muted": "{icon}",
+                "format-icons": [ "󰕿", "󰖀", "󰕾" ],
+                "format-bluetooth": "{icon} ",
+                "format-bluetooth-muted": "{icon} ",
+                "tooltip-format": "{desc}: {volume}%",
+                "on-click": "pavucontrol"
+        },
+        "pulseaudio#input": {
+                "format": "{format_source}",
+                "format-source": "",
+                "format-source-muted": "",
+                "tooltip-format": "{source_desc}: {source_volume}%",
+                "on-click": "pavucontrol"
+        },
+        "battery": {
+                "format": "{icon}",
+                "format-full": "{icon}",
+                "format-charging": "󰂄",
+                "format-plugged": "󰚥",
+                "format-icons": [ "󰂎", "󰁺", "󰁼", "󰁾", "󰂀", "󰁹" ],
+                "tooltip-format": "{timeTo} ({capacity}%)"
+        },
+        "clock": {
+                "tooltip-format": "<span font-family='JetBrainsMono Nerd Font, monospace'><big>{calendar}</big></span>",
+                "calendar": {
+                        "weeks-pos": "right",
+                        "format": {
+                                "months": "<span color='#cdd6f4'><b>{}</b></span>",
+                                "days": "<span color='#787878'>{}</span>",
+                                "weeks": "<span color='#89dceb'>W{}</span>",
+                                "weekdays": "<span color='#f38ba8'><b>{}</b></span>",
+                                "today": "<span color='#cdd6f4'><b>{}</b></span>"
+                        }
+                },
+                "actions": {
+                        "on-click": "shift_up",
+                        "on-click-right": "shift_down"
+                }
+        },
+        "custom/power": {
+                "format" : "⏻",
+                "tooltip": false,
+                "on-click": "$HOME/.config/waybar/scripts/power-menu.sh"
+        }
+}
+

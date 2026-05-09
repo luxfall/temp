@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=custom
+Description=A custom minimal theme
+Type=sddm-theme
+Author=luxfall
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=custom
+QtVersion=6
+

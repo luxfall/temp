@@ -1,0 +1,113 @@
+@import "colors.css";
+
+* {
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-family: "Inter", "JetBrainsMono Nerd Font", monospace;
+        font-size: 13px;
+}
+
+window#waybar {
+        background: @background-color;
+        color: @foreground-color;
+        border-radius: 18px;
+        border: 1px solid @border-color;
+}
+
+#workspaces {
+        margin: 0px 9px 0px 8px;
+}
+
+#workspaces button {
+        padding: 0px 4px 0px 0px;
+        margin: 0px 1px 0px 2px;
+        color: @foreground-inactive-color;
+        text-shadow: 0px 0px 1px white;
+}
+
+#workspaces button.active {
+        color: @active-workspace-color;
+        text-shadow: 0px 0px 1px white;
+}
+
+#window {
+        margin: 0px 0px 0px 10px;
+}
+
+#custom-power {
+        padding: 0px 4px 0px 1px;
+        margin: 0px 10px 0px 0px;
+}
+
+#clock {
+        padding: 0px 1px 0px 1px;
+        margin: 0px 10px 0px 0px;
+}
+
+#control-center {
+        margin: 0px 7px;
+}
+
+#battery {
+        padding: 0px 1px 0px 1px;
+        margin: 0px 3px;
+}
+
+#pulseaudio.input {
+        padding: 0px 1px;
+        margin: 0px 3px;
+}
+
+#pulseaudio.input.source-muted {
+        color: @foreground-inactive-color;
+}
+
+#pulseaudio.output {
+        padding: 0px 3px 0px 1px;
+        margin: 0px 3px;
+}
+
+#pulseaudio.output.source-muted {
+        color: @foreground-inactive-color;
+}
+
+#network {
+        padding: 0px 5px 0px 1px;
+        margin: 0px 3px;
+}
+
+#network.disconnected, #network.disabled {
+        color: @foreground-inactive-color;
+}
+
+#backlight {
+        padding: 0px 5px 0px 1px;
+        margin: 0px 3px;
+}
+
+#custom-notifications {
+        padding: 0px 3px 0px 1px;
+        margin: 0px 3px;
+}
+
+#custom-notifications.inactive {
+        color: @foreground-inactive-color;
+}
+
+#custom-cliphist {
+        padding: 0px 3px 0px 1px;
+        margin: 0px 3px;
+}
+
+#gamemode {
+        margin: 0px 0px 0px 6px;
+        color: @foreground-inactive-color;
+}
+
+tooltip, menu {
+        background: @background-color;
+        border: 1px solid @border-color;
+        color: @foreground-color;
+}
+
