@@ -41,4 +41,6 @@ ya pkg add yazi-rs/plugins:smart-enter
 ya pkg add yazi-rs/plugins:full-border
 ya pkg add yazi-rs/plugins:git
 ya pkg add yazi-rs/plugins:mount
+ya pkg add yazi-rs/plugins:no-status
+ya pkg add yazi-rs/plugins:jump-to-char
 

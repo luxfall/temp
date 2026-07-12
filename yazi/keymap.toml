@@ -6,4 +6,10 @@ desc = "Enter the child directory, or open the file"
 [[mgr.prepend_keymap]]
 on = "M"
 run = "plugin mount"
+desc = "Open mount menu"
+
+[[mgr.prepend_keymap]]
+on = "f"
+run = "plugin jump-to-char"
+desc = "Jump to char"
 
