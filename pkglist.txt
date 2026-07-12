@@ -3,10 +3,8 @@ bat
 betterbird-bin
 brave-origin-bin
 btrfs-assistant
-cliphist
 diff-so-fancy
 duf
-dunst
 eza
 firewalld
 foot
@@ -14,10 +12,7 @@ fuzzel
 hyprland
 hyprpolkitagent
 hyprshutdown
-hyprpwcenter
 hyprlock
-hyprsunset
-hyprpaper
 fzf
 gamemode
 git
@@ -51,4 +46,4 @@ zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k
-
+7zip

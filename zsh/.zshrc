@@ -1,10 +1,8 @@
-
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-        source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 export PATH=$HOME/.cargo/bin:$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH="/usr/share/oh-my-zsh"
+export ZSH_CUSTOM=$HOME/.config/oh-my-zsh/custom
+
+ZSH_THEME="custom"
 
 plugins=(git fzf)
 
@@ -29,8 +27,4 @@ alias ls="eza"
 alias ll="eza -lah"
 alias cat="bat"
 alias df="duf"
-
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

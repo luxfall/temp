@@ -2,6 +2,7 @@
 
 sudo pacman -Syyu
 sudo pacman -S --needed - < pkglist.txt
+paru -S noctalia-git
 
 DOTFILES="$(git rev-parse --show-toplevel)"
 
@@ -15,6 +16,8 @@ sudo cp -rf $DOTFILES/sddm/sddm.conf /etc/sddm.conf.d/sddm.conf
 
 git clone https://github.com/tmux-plugins/tpm $HOME/.local/share/tmux/plugins/tpm
 
+mkdir -p $HOME/.config/oh-my-zsh/custom/themes
+
 stow --verbose --dir=$DOTFILES --target=$HOME/.config/foot foot
 stow --verbose --dir=$DOTFILES --target=$HOME/.config/fuzzel fuzzel
 stow --verbose --dir=$DOTFILES --target=$HOME/.config/hypr hypr
@@ -27,6 +30,8 @@ stow --verbose --dir=$DOTFILES --target=$HOME/.config/xkb xkb
 stow --verbose --dir=$DOTFILES --target=$HOME/.config/matugen matugen
 stow --verbose --dir=$DOTFILES --target=$HOME git
 stow --verbose --dir=$DOTFILES --target=$HOME zsh
+stow --verbose --dir=$DOTFILES --target=$HOME/.config/oh-my-zsh/custom/themes oh-my-zsh
+stow --verbose --dir=$DOTFILES --target=$HOME/.config/noctalia noctalia
 
 sudo systemctl enable --now sddm
 sudo systemctl enable --now firewalld

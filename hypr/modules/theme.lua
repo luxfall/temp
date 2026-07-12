@@ -1,6 +1,4 @@
 
-local colors = require("themes.custom")
-
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
@@ -14,8 +12,8 @@ hl.config({
 		border_size = 2,
 
 		col = {
-			active_border   = { colors = { colors.active_border_1, colors.active_border_2 }, angle = 45 },
-			inactive_border = colors.inactive_border,
+			active_border   = { colors = { "#ffffff", "#aaaaaa" }, angle = 45 },
+			inactive_border = "#555555",
 		},
 
 		resize_on_border = true,
@@ -37,7 +35,7 @@ hl.config({
 			enabled = true,
 			range = 3,
 			render_power = 3,
-			color = colors.colors0,
+			color = "#000000",
 		},
 
 		blur = {
