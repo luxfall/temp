@@ -16,6 +16,7 @@ hyprlock
 fzf
 gamemode
 git
+greetd
 grim
 inter-font
 lact
@@ -29,7 +30,6 @@ qt6-wayland
 qt5-graphicaleffects
 qt5ct
 qt6ct
-sddm
 slurp
 ssh-tools
 stow

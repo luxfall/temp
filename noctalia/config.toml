@@ -22,6 +22,9 @@ members = [ "notifications", "clipboard", "network", "brightness", "bluetooth", 
 opacity = 1.0
 padding = 10.0
 
+[control_center.calendar]
+show_events_card = false
+
 [desktop_widgets]
 enabled = false
 
@@ -76,12 +79,14 @@ temperature_day = 3600
 font_family = "Inter"
 ui_scale = 0.85000000521540642
 
+[shell.greeter_sync]
+auto_sync = true
+
 [shell.panel]
 open_near_click_control_center = true
 
 [[shell.session.actions]]
 action = "lock"
-command = "hyprlock"
 enabled = true
 shortcut = "1"
 variant = "default"

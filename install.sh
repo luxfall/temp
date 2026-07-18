@@ -2,7 +2,15 @@
 
 sudo pacman -Syyu
 sudo pacman -S --needed - < pkglist.txt
+
 paru -S noctalia-git
+sudo pacman -S -needed meson gcc just dbus wayland wayland-protocols wlroots0.20 libglvnd freetype2 fontconfig cairo pango harfbuzz libckbcommon glib2 libwebp librsvg
+git clone https://github.com/noctalia-dev/noctalia-greeter ~/noctalia-greeter
+cd ~/noctalia-greeter
+just configure-release
+just build-release
+sudo meson install -C build-release
+sudo ./scripts/setup_greeter_system.sh
 
 DOTFILES="$(git rev-parse --show-toplevel)"
 
