@@ -23,6 +23,8 @@ lact
 matugen
 mpv
 networkmanager
+noctalia
+noctalia-greeter
 nvim
 oh-my-zsh-git
 qt5-wayland
