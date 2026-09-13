@@ -1,0 +1,29 @@
+[config]
+
+[templates.qt]
+input_path = '~/.config/matugen/templates/qt.colors'
+output_path = '~/.local/share/color-schemes/Matugen.colors'
+# TODO:  Set qt5 and qt6 color scheme
+
+[templates.foot]
+input_path = '~/.config/matugen/templates/foot-colors.ini'
+output_path = '~/.config/foot/Matugen.ini'
+post_hook = 'pkill -SIGUSR1 foot || true'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.lua'
+output_path = '~/.config/hypr/modules/Matugen.lua'
+post_hook = 'hyprctl reload'
+
+[templates.noctalia]
+input_path = '~/.config/matugen/templates/noctalia-colors.json'
+output_path = '~/.config/noctalia/palettes/Matugen.json'
+post_hook = 'noctalia msg color-scheme-set custom Matugen'
+
+[templates.zed]
+input_path = '~/.config/matugen/templates/zed-colors.json'
+output_path = '~/.config/zed/themes/matugen.json'
+
+[templates.gtk]
+input_path = '~/.config/matugen/templates/gtk.json'
+output_path = '~/.config/gtk-4.0/gtk.css'

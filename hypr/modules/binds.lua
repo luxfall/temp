@@ -5,7 +5,7 @@
 
 local terminal = "foot"
 local fileManager = "foot yazi"
-local menu = "fuzzel"
+local menu = "noctalia msg panel-toggle launcher"
 
 
 ---------------------

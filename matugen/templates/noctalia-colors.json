@@ -1,0 +1,94 @@
+{
+  "dark": {
+    "mPrimary": "{{colors.primary.dark.hex}}",
+    "mOnPrimary": "{{colors.on_primary.dark.hex}}",
+    "mSecondary": "{{colors.secondary.dark.hex}}",
+    "mOnSecondary": "{{colors.on_secondary.dark.hex}}",
+    "mTertiary": "{{colors.tertiary.dark.hex}}",
+    "mOnTertiary": "{{colors.on_tertiary.dark.hex}}",
+    "mError": "{{colors.error.dark.hex}}",
+    "mOnError": "{{colors.on_error.dark.hex}}",
+    "mSurface": "{{colors.surface.dark.hex}}",
+    "mOnSurface": "{{colors.on_surface.dark.hex}}",
+    "mSurfaceVariant": "{{colors.surface_variant.dark.hex}}",
+    "mOnSurfaceVariant": "{{colors.on_surface_variant.dark.hex}}",
+    "mOutline": "{{colors.outline.dark.hex}}",
+    "mShadow": "{{colors.shadow.dark.hex}}",
+    "mHover": "{{colors.surface_container_high.dark.hex}}",
+    "mOnHover": "{{colors.on_surface.dark.hex}}",
+    "terminal": {
+      "background": "{{colors.surface.dark.hex}}",
+      "foreground": "{{colors.on_surface.dark.hex}}",
+      "cursor": "{{colors.primary.dark.hex}}",
+      "cursorText": "{{colors.on_primary.dark.hex}}",
+      "selectionBackground": "{{colors.primary.dark.hex}}",
+      "selectionForeground": "{{colors.on_primary.dark.hex}}",
+      "normal": {
+        "black": "{{colors.surface_container_lowest.dark.hex}}",
+        "red": "{{colors.error.dark.hex}}",
+        "green": "{{colors.tertiary.dark.hex}}",
+        "yellow": "{{colors.secondary.dark.hex}}",
+        "blue": "{{colors.primary.dark.hex}}",
+        "magenta": "{{colors.primary.dark.hex}}",
+        "cyan": "{{colors.tertiary.dark.hex}}",
+        "white": "{{colors.on_surface_variant.dark.hex}}"
+      },
+      "bright": {
+        "black": "{{colors.surface_container_high.dark.hex}}",
+        "red": "{{colors.on_error_container.dark.hex}}",
+        "green": "{{colors.on_tertiary_container.dark.hex}}",
+        "yellow": "{{colors.on_secondary_container.dark.hex}}",
+        "blue": "{{colors.on_primary_container.dark.hex}}",
+        "magenta": "{{colors.on_primary_container.dark.hex}}",
+        "cyan": "{{colors.on_tertiary_container.dark.hex}}",
+        "white": "{{colors.on_surface.dark.hex}}"
+      }
+    }
+  },
+  "light": {
+    "mPrimary": "{{colors.primary.light.hex}}",
+    "mOnPrimary": "{{colors.on_primary.light.hex}}",
+    "mSecondary": "{{colors.secondary.light.hex}}",
+    "mOnSecondary": "{{colors.on_secondary.light.hex}}",
+    "mTertiary": "{{colors.tertiary.light.hex}}",
+    "mOnTertiary": "{{colors.on_tertiary.light.hex}}",
+    "mError": "{{colors.error.light.hex}}",
+    "mOnError": "{{colors.on_error.light.hex}}",
+    "mSurface": "{{colors.surface.light.hex}}",
+    "mOnSurface": "{{colors.on_surface.light.hex}}",
+    "mSurfaceVariant": "{{colors.surface_variant.light.hex}}",
+    "mOnSurfaceVariant": "{{colors.on_surface_variant.light.hex}}",
+    "mOutline": "{{colors.outline.light.hex}}",
+    "mShadow": "{{colors.shadow.light.hex}}",
+    "mHover": "{{colors.surface_container_high.light.hex}}",
+    "mOnHover": "{{colors.on_surface.light.hex}}",
+    "terminal": {
+      "background": "{{colors.surface.light.hex}}",
+      "foreground": "{{colors.on_surface.light.hex}}",
+      "cursor": "{{colors.primary.light.hex}}",
+      "cursorText": "{{colors.on_primary.light.hex}}",
+      "selectionBackground": "{{colors.primary.light.hex}}",
+      "selectionForeground": "{{colors.on_primary.light.hex}}",
+      "normal": {
+        "black": "{{colors.surface_container_lowest.light.hex}}",
+        "red": "{{colors.error.light.hex}}",
+        "green": "{{colors.tertiary.light.hex}}",
+        "yellow": "{{colors.secondary.light.hex}}",
+        "blue": "{{colors.primary.light.hex}}",
+        "magenta": "{{colors.primary.light.hex}}",
+        "cyan": "{{colors.tertiary.light.hex}}",
+        "white": "{{colors.on_surface_variant.light.hex}}"
+      },
+      "bright": {
+        "black": "{{colors.surface_container_high.light.hex}}",
+        "red": "{{colors.on_error_container.light.hex}}",
+        "green": "{{colors.on_tertiary_container.light.hex}}",
+        "yellow": "{{colors.on_secondary_container.light.hex}}",
+        "blue": "{{colors.on_primary_container.light.hex}}",
+        "magenta": "{{colors.on_primary_container.light.hex}}",
+        "cyan": "{{colors.on_tertiary_container.light.hex}}",
+        "white": "{{colors.on_surface.light.hex}}"
+      }
+    }
+  }
+}

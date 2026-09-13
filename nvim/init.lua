@@ -5,7 +5,6 @@ require("config.lazy_init")
 require("lazy").setup({
     require "plugins.actions-preview",
     require "plugins.cmp",
-    require "plugins.base16",
     require "plugins.fugitive",
     require "plugins.harpoon",
     require "plugins.indentline",
