@@ -11,10 +11,10 @@ hl.config({
 
 		border_size = 2,
 
-		col = {
-			active_border   = { colors = { "#ffffff", "#aaaaaa" }, angle = 45 },
-			inactive_border = "#555555",
-		},
+		--col = {
+		--	active_border   = { colors = { "#ffffff", "#aaaaaa" }, angle = 45 },
+		--	inactive_border = "#555555",
+		--},
 
 		resize_on_border = true,
 
@@ -35,7 +35,7 @@ hl.config({
 			enabled = true,
 			range = 3,
 			render_power = 3,
-			color = "#000000",
+			--color = "#000000",
 		},
 
 		blur = {
@@ -50,8 +50,6 @@ hl.config({
 		enabled = true,
 	},
 })
-
-require("modules.matugen")
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 --hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })

@@ -7,3 +7,6 @@ require("modules.rules")
 require("modules.binds")
 require("modules.exec")
 
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()

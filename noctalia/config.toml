@@ -11,7 +11,7 @@ margin_edge = 5
 margin_ends = 160
 radius = 14
 scale = 0.80000000000000004
-start = [ "workspaces", "active_window" ]
+start = [ "wallpaper", "workspaces", "active_window" ]
 thickness = 25
 widget_spacing = 8
 
@@ -24,8 +24,11 @@ widget_spacing = 8
 
 [calendar]
 
-[control_center.calendar]
-show_events_card = false
+[control_center]
+sidebar_section = "none"
+
+    [control_center.calendar]
+    show_events_card = false
 
 [desktop_widgets]
 enabled = false
@@ -45,8 +48,8 @@ widget_order = [ "lockscreen-login-box@Virtual-1", "lockscreen-widget-0000000000
 
     [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1"]
     box_height = 196.0
-    box_width = 720.0
-    cx = 960.0
+    box_width = 736.0
+    cx = 968.0
     cy = 588.60003662109375
     output = "Virtual-1"
     placement_height = 1080.0
@@ -139,7 +142,10 @@ polkit_agent = false
     compact = true
 
     [shell.panel]
+    clipboard_placement = "attached"
+    open_near_click_clipboard = true
     open_near_click_control_center = true
+    open_near_click_wallpaper = true
 
     [shell.session]
     grid_columns = 5
@@ -196,13 +202,24 @@ source = "custom"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = []
+    builtin_ids = [ "btop", "foot", "gtk3", "gtk4", "hyprland", "qt" ]
     community_ids = []
-    enable_builtin_templates = false
+    enable_builtin_templates = true
     enable_community_templates = false
 
 [wallpaper]
 directory = "~/Pictures"
+transition = [ "zoom" ]
+transition_duration = 800
+
+    [wallpaper.default]
+    path = "/home/luxfall/Pictures/img.jpeg"
+
+    [wallpaper.last]
+    path = "/home/luxfall/Pictures/img.jpeg"
+
+    [wallpaper.monitors.Virtual-1]
+    path = "/home/luxfall/Pictures/img.jpeg"
 
 [weather]
 enabled = false
@@ -234,4 +251,3 @@ show_label = false
 active_pill_size = 2.8000000000000003
 pill_scale = 0.70000000000000007
 show_labels = false
-

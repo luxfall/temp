@@ -16,7 +16,7 @@ sudo pacman -S --needed - < pkglist.txt
 DOTFILES="$(git rev-parse --show-toplevel)"
 
 #mkdir -p $HOME/.config/{foot,fuzzel,hypr,tmux,nvim,xkb}
-mkdir -p $HOME/.config/{foot,hypr,tmux,nvim,xkb,matugen,noctalia}
+mkdir -p $HOME/.config/{foot,hypr,tmux,nvim,xkb,matugen,noctalia,qt5ct}
 mkdir -p $HOME/.local/tmux/plugins
 #sudo mkdir -p /usr/share/sddm/themes
 #sudo mkdir -p /etc/sddm.conf.d
