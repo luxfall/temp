@@ -28,3 +28,5 @@ alias ll="eza -lah"
 alias cat="bat"
 alias df="duf"
 
+eval "$(zoxide init zsh)"
+

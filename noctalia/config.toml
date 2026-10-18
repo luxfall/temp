@@ -140,6 +140,7 @@ polkit_agent = false
     [shell.launcher]
     categories = false
     compact = true
+    layout = "simple"
 
     [shell.panel]
     clipboard_placement = "attached"
@@ -196,15 +197,16 @@ enabled = false
 
 [theme]
 builtin = "Noctalia"
+community_palette = "Paradise"
 custom_palette = "Matugen"
 mode = "dark"
-source = "custom"
+source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "foot", "gtk3", "gtk4", "hyprland", "qt" ]
-    community_ids = []
-    enable_builtin_templates = true
+    builtin_ids = []
+    community_ids = [ "discord", "neovim", "papirus-icons", "bat", "fzf", "tmux" ]
+    enable_builtin_templates = false
     enable_community_templates = false
 
 [wallpaper]
@@ -213,13 +215,13 @@ transition = [ "zoom" ]
 transition_duration = 800
 
     [wallpaper.default]
-    path = "/home/luxfall/Pictures/img.jpeg"
+    path = "/home/luxfall/Pictures/159402.jpg"
 
     [wallpaper.last]
-    path = "/home/luxfall/Pictures/img.jpeg"
+    path = "/home/luxfall/Pictures/159402.jpg"
 
     [wallpaper.monitors.Virtual-1]
-    path = "/home/luxfall/Pictures/img.jpeg"
+    path = "/home/luxfall/Pictures/159402.jpg"
 
 [weather]
 enabled = false

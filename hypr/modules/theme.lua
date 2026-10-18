@@ -11,11 +11,6 @@ hl.config({
 
 		border_size = 2,
 
-		--col = {
-		--	active_border   = { colors = { "#ffffff", "#aaaaaa" }, angle = 45 },
-		--	inactive_border = "#555555",
-		--},
-
 		resize_on_border = true,
 
 		-- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
@@ -35,7 +30,6 @@ hl.config({
 			enabled = true,
 			range = 3,
 			render_power = 3,
-			--color = "#000000",
 		},
 
 		blur = {

@@ -4,7 +4,7 @@
 ---------------------
 
 local terminal = "foot"
-local fileManager = "foot yazi"
+local fileManager = "dolphin"
 local menu = "noctalia msg panel-toggle launcher"
 
 

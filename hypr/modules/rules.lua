@@ -68,3 +68,19 @@ hl.window_rule({
     float = true,
 })
 
+hl.window_rule({
+    name = "dolphin",
+    match = {
+        class = "^(org\\.kde\\.dolphin)$",
+    },
+    opacity = "0.90 override 0.90 override",
+})
+
+hl.window_rule({
+    name = "vencord",
+    match = {
+        class = "^(vesktop)$",
+    },
+    opacity = "0.90 override 0.90 override",
+})
+
